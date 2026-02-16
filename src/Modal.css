@@ -1,0 +1,7 @@
+.modal-overlay{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:flex;align-items:center;justify-content:center;z-index:60;padding:20px}
+.modal-content{position:relative;background:var(--modal-bg,#0b0b0c);padding:20px;border-radius:12px;max-width:720px;width:100%;color:inherit;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+.modal-title{margin:0 0 12px 0;font-size:1.125rem}
+.modal-body{margin-top:4px}
+.modal-close{position:absolute;top:12px;right:12px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit;padding:6px 8px;border-radius:8px;cursor:pointer}
+.modal-close:hover{border-color:rgba(100,99,255,0.45)}
+.modal-close:focus{outline:4px auto -webkit-focus-ring-color}

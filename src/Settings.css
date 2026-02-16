@@ -1,0 +1,50 @@
+.settings-form{
+	max-width:640px;
+	padding:18px;
+	border-radius:8px;
+	box-sizing:border-box;
+	transition:background-color 0.2s, color 0.2s;
+}
+
+/* dark theme (default) */
+:root.dark .settings-form{
+	background:#0b0b0c;
+	color:#e6eef8;
+}
+
+/* light theme */
+:root:not(.dark) .settings-form{
+	background:#ffffff;
+	color:#213547;
+}
+
+.settings-form label{
+	display:block;
+	font-size:13px;
+	margin-bottom:6px;
+}
+
+:root.dark .settings-form label{ color:#9ca3af; }
+:root:not(.dark) .settings-form label{ color:#6b7280; }
+
+.settings-form .input{
+	width:100%;
+	box-sizing:border-box;
+	padding:8px 10px;
+	border-radius:8px;
+	border:1px solid rgba(0,0,0,0.08);
+	background:transparent;
+	color:inherit;
+}
+
+:root.dark .settings-form .input{ border-color: rgba(255,255,255,0.04); background: rgba(255,255,255,0.02); }
+:root:not(.dark) .settings-form .input{ border-color: rgba(0,0,0,0.08); background: #f9f9f9; }
+
+.settings-form .actions{ margin-top:16px; display:flex; gap:8px; }
+.settings-form button{ padding:8px 12px; border-radius:8px; cursor:pointer; }
+.settings-form .btn-primary{ background:#6366F1; color:white; border: none; }
+.settings-form button[type="button"]{ background:transparent; border:1px solid rgba(0,0,0,0.08); color: #213547; }
+:root.dark .settings-form button[type="button"]{ border-color: rgba(255,255,255,0.06); color: #e6eef8; }
+:root:not(.dark) .settings-form button[type="button"]{ border-color: rgba(0,0,0,0.08); color: #213547; }
+
+.settings-form .saved-indicator{ margin-top:8px; color:#34d399; }

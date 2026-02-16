@@ -1,0 +1,112 @@
+.floating-icons-section {
+  padding: 100px 0;
+  background: var(--color-black);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.floating-icons-content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.floating-icons-left {
+  flex: 1;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.floating-icons-left svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon-float {
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-1 {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.icon-2 {
+  top: 40%;
+  left: 45%;
+  animation-delay: 0.5s;
+}
+
+.icon-3 {
+  top: 15%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.icon-4 {
+  bottom: 20%;
+  left: 30%;
+  animation-delay: 1.5s;
+}
+
+.dot-float {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #8054FF;
+  border-radius: 50%;
+  animation: float 2s ease-in-out infinite;
+}
+
+.dot-1 {
+  top: 10%;
+  right: 40%;
+  animation-delay: 0.3s;
+}
+
+.dot-2 {
+  bottom: 30%;
+  right: 15%;
+  animation-delay: 0.8s;
+}
+
+.dot-3 {
+  bottom: 10%;
+  left: 50%;
+  animation-delay: 1.2s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.floating-icons-right {
+  flex: 1;
+}
+
+.floating-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.floating-subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}

@@ -1,0 +1,49 @@
+.features {
+  padding: 80px 0;
+  position: relative;
+  overflow: visible;
+  background: transparent;
+}
+
+.features-header {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.features-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.features-subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* background SVG wrapper (centers the gradient curve) */
+.features-bg{
+  position: absolute;
+  left: 50%;
+  /* translate X to center and translate Y to lift the SVG visually */
+  transform: translate(-50%, -127px);
+  top: 18px;
+  width: 100%;
+  max-width: 1431px;
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+}
+.features-bg svg{ width:100%; height:auto; display:block; }
+
+/* ensure cards sit above the SVG */
+.features .container > .features-grid,
+.features .container > .features-header{ position: relative; z-index: 1; }

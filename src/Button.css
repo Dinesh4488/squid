@@ -1,0 +1,46 @@
+.btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #FF9898 0%, #8054FF 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 152, 152, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-purple);
+  background: rgba(128, 84, 255, 0.1);
+}
+
+.btn-small {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.btn-medium {
+  padding: 12px 32px;
+  font-size: 16px;
+}
+
+.btn-large {
+  padding: 16px 40px;
+  font-size: 18px;
+}
